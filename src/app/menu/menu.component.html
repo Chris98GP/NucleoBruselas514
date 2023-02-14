@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <figure style="float: left;">
+      <img src="../../assets/img/logo.png" alt="" width="50" height="50">
+  </figure>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>medical_services</mat-icon>
+        <span>Doctores</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>place</mat-icon>
+        <span>Ubicacion</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>medical_information</mat-icon>
+        <span>Hacer una cita</span>
+      </button>
+    </mat-menu>
+
+
+
+  <span>NucleoBruselas514</span>
+  <span class="example-spacer"></span>
+
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>contact_support</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>login</mat-icon>
+      
+    </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
+
+<app-principal></app-principal>
